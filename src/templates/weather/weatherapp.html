@@ -5,7 +5,23 @@
 
 {% block content %}
 
-<h1>this is weather app </h1>
+<div class="container-fluid" style="margin-top:60px;margin-bottom:100px;">
+
+    <div class="col-md-offset-4 col-md-3">
+        <h3 class="page-header text-primary text-center"><span class="fas fa-cloud-sun"></span>Django-Weather Application</h3>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit"><span class="fa fa-add"></span>Add City</button>
+                </span>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
 
 
 {% endblock content %}
